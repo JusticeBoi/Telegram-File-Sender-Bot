@@ -2,4 +2,4 @@
 parent_dir="$(dirname "$1")"
 basename="$(basename "$1")"
 tar -czf $1.tar.gz -C $parent_dir $basename
-curl -F chat_id="xxxxxxxxx" -F document=@"$1".tar.gz -F caption="Sending $1" https://api.telegram.org/bot<token>/sendDocument 
+curl -F chat_id="xxxxxxxxx" -F document=@"$1".tar.gz -F caption="Sending $1" https://api.telegram.org/bot**YourBOTToken**/sendDocument 
