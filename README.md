@@ -17,3 +17,9 @@ curl https://api.telegram.org/bot**YourBOTToken**/getUpdates
 * tar
 
 I believe these dependencies are present in most linux machines.
+
+
+Some helpful links that made this script possible:
+* https://core.telegram.org/bots/api
+* https://stackoverflow.com/questions/55470047/how-to-send-file-via-telegram-bot
+* 
