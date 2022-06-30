@@ -1,8 +1,9 @@
-#!/bin/sh
-parent_dir="$(dirname "$1")"
-basename="$(basename "$1")"
-chatid="xxxxxxxx"
-bot_token=""
-
-tar -czf $1.tar.gz -C $parent_dir $basename
-curl -F chat_id=$chatid -F document=@"$1".tar.gz -F caption="Sending $1" https://api.telegram.org/bot$bot_token/sendDocument 
+for var in "$@"
+do
+    parent_dir="$(dirname "$var")"
+    basename="$(basename "$var")"
+    chatid="358911129"
+    bot_token="xxxxx"
+    
+    curl -F chat_id=$chatid -F document=@"$var" -F caption="Sending $var" https://api.telegram.org/bot$bot_token/sendDocument
+done
