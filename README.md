@@ -8,9 +8,15 @@ I had this need to send compressed files/folders through the command line to my 
 ```bash
 curl https://api.telegram.org/bot**YourBOTToken**/getUpdates
 ```
+* Fill chatid and bot_taken variables inside the script
+
+* Send Files by:
+```bash
+./SendTelegram file1 file2 file3
+```
   
 
-* Fill chatid and bot_taken variables inside the script
+
 
 ## Dependencies
 * curl
